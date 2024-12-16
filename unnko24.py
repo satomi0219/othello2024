@@ -1,3 +1,21 @@
+!pip install -U kogi-canvas
+
+from kogi_canvas import play_othello, PandaAI
+
+BLACK=1
+WHITE=2
+
+board = [
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+        [0,0,1,2,0,0],
+        [0,0,2,1,0,0],
+        [0,0,0,0,0,0],
+        [0,0,0,0,0,0],
+]
+
+play_othello(PandaAI()) # ここを自分の作ったAIに変える
+
 import math
 
 BLACK = 1
