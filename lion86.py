@@ -143,7 +143,7 @@ class LionAI:
         for x, y in valid_moves:
             temp_board = [row[:] for row in board]
             apply_move(temp_board, stone, x, y)
-            score = alphabeta(temp_board, 3 - stone, depth=6, alpha=-math.inf, beta=math.inf, maximizing_player=False)
+            score = alphabeta(temp_board, 3 - stone, depth=5, alpha=-math.inf, beta=math.inf, maximizing_player=False)
             if score > best_score:
                 best_score = score
                 best_move = (x, y)
