@@ -128,9 +128,9 @@ def alphabeta(board, stone, depth, alpha, beta, maximizing_player):
                 break
         return min_eval
 
-class PandaAI:
+class LionAI:
     def face(self):
-        return "🐼"
+        return "🦁"
 
     def place(self, board, stone):
         valid_moves = get_valid_moves(board, stone)
@@ -149,5 +149,3 @@ class PandaAI:
                 best_move = (x, y)
 
         return best_move
-
-  play_othello(PandaAI())
