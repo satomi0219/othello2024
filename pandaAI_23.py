@@ -1,25 +1,3 @@
-BLACK=1
-WHITE=2
-
-board = [
-        [0,0,0,0,0,0],
-        [0,0,0,0,0,0],
-        [0,0,1,2,0,0],
-        [0,0,2,1,0,0],
-        [0,0,0,0,0,0],
-        [0,0,0,0,0,0],
-]
-
-
-class AI(object):
-
-    def face(self):
-        return "🐼"
-
-    def place(self, board, stone):
-        return x, y
-
-
 import random
 import math
 
@@ -150,6 +128,8 @@ for _ in range(1000):  # 1000回対戦
     state = get_state(final_board)
     for action in Q_TABLE.get(state, {}):
         update_q_table(state, action, reward, state)
+
+
 
 !pip install -U kogi-canvas
 
